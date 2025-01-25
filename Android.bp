@@ -3017,59 +3017,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libadreno_app_profiles",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libadreno_app_profiles.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libhardware",
-                "libutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0",
-                "libdl",
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libadreno_app_profiles.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "libhardware",
-                "libutils",
-                "libhidlbase",
-                "libhidlmemory",
-                "android.hidl.memory@1.0",
-                "vendor.qti.qspmhal@1.0",
-                "libdl",
-                "libz",
-                "liblog",
-                "libc++",
-                "libc",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libadreno_utils",
     owner: "motorola",
     strip: {
@@ -9668,49 +9615,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/vendor.qti.qspmhal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0.so",
-            ],
-            shared_libs: [
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libOmxDsdDec",
     owner: "motorola",
     strip: {
@@ -13927,38 +13831,6 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
-cc_prebuilt_library_shared {
-    name: "vendor.qti.qspmhal@1.0-impl",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/vendor.qti.qspmhal@1.0-impl.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "vendor.qti.qspmhal@1.0",
-                "android.hidl.allocator@1.0",
-                "android.hidl.memory@1.0",
-                "libhidlbase",
-                "libhidlmemory",
-                "liblog",
-                "libcutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
 prebuilt_rfsa {
     name: "capi_v2_aptX_CLHDADV_Encoder",
     filename: "capi_v2_aptX_CLHDADV_Encoder.so",
@@ -16814,36 +16686,6 @@ cc_prebuilt_binary {
                 "libqmi_cci",
                 "libqmi_common_so",
                 "libc++",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    strip: {
-        none: true,
-    },
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_binary {
-    name: "vendor.qti.qspmhal@1.0-service",
-    owner: "motorola",
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/bin/vendor.qti.qspmhal@1.0-service",
-            ],
-            shared_libs: [
-                "vendor.qti.qspmhal@1.0",
-                "vendor.qti.qspmhal@1.0-impl",
-                "libhidlbase",
-                "liblog",
-                "libutils",
-                "libavservices_minijail",
-                "libc++",
-                "libc",
                 "libm",
                 "libdl",
             ],

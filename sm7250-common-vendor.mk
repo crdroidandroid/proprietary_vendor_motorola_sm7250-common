@@ -92,7 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -104,7 +103,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
-    vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -219,7 +217,6 @@ PRODUCT_PACKAGES += \
     libacdbloader \
     libacdbrtac \
     libadiertac \
-    libadreno_app_profiles \
     libadreno_utils \
     libadsp_default_listener \
     libadsprpc \
@@ -368,7 +365,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.imsrtpservice@3.0-vendor \
     vendor.qti.latency@2.0 \
     vendor.qti.latency@2.1 \
-    vendor.qti.qspmhal@1.0 \
     libOmxDsdDec \
     libadm \
     libadpcmdec \
@@ -508,7 +504,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
     vendor.qti.hardware.wifi.wifilearner@1.0 \
     vendor.qti.hardware.wigig.netperftuner@1.0 \
-    vendor.qti.qspmhal@1.0-impl \
     capi_v2_aptX_CLHDADV_Encoder \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     libapps_mem_heap \
@@ -632,7 +627,6 @@ PRODUCT_PACKAGES += \
     tftp_server \
     thermal-engine \
     time_daemon \
-    vendor.qti.qspmhal@1.0-service \
     vppservice \
     wifilearner \
     xtra-daemon \
