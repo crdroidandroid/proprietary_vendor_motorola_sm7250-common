@@ -430,7 +430,6 @@ PRODUCT_PACKAGES += \
     libsettings \
     libslimclient \
     libsystem_health_mon \
-    libsystempioctl \
     libtinyxml2_1 \
     libwvhidl \
     libxtadapter \
