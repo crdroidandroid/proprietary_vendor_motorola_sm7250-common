@@ -13,48 +13,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libaptXHD_encoder",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libaptXHD_encoder.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libaptX_encoder",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/system/lib64/libaptX_encoder.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-}
-
-cc_prebuilt_library_shared {
     name: "btaudio_offload_if",
     owner: "motorola",
     strip: {
@@ -2202,47 +2160,6 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libI420colorconvert",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libI420colorconvert.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libmm-color-convertor",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libI420colorconvert.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libmm-color-convertor",
                 "libc++",
                 "libc",
                 "libm",
@@ -4605,41 +4522,6 @@ cc_prebuilt_library_shared {
                 "libqrtr",
                 "libcutils",
                 "liblog",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libmm-color-convertor",
-    owner: "motorola",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libmm-color-convertor.so",
-            ],
-            shared_libs: [
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libmm-color-convertor.so",
-            ],
-            shared_libs: [
                 "libc++",
                 "libc",
                 "libm",
