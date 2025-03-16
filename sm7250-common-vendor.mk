@@ -520,6 +520,7 @@ PRODUCT_PACKAGES += \
     libdpmfdmgr \
     libdpmframework \
     libdpmtcm \
+    CACertService \
     CneApp \
     IWlanService \
     TimeService \
