@@ -9,6 +9,7 @@ soong_namespace {
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/dataservices",
         "vendor/qcom/opensource/display",
+        "hardware/motorola",
     ],
 }
 
