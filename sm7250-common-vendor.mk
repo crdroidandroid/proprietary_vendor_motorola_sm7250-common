@@ -92,6 +92,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
@@ -101,7 +102,11 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/permissions/com.motorola.camera2.content.ai.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.motorola.camera2.content.ai.xml \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
+    vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/motorola/sm7250-common/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
@@ -262,12 +267,6 @@ PRODUCT_PACKAGES += \
     libperipheral_client \
     libqcbor \
     libqcci_legacy \
-    libqcodec2_base \
-    libqcodec2_basecodec \
-    libqcodec2_core \
-    libqcodec2_platform \
-    libqcodec2_utils \
-    libqcodec2_v4l2codec \
     libqcrilFramework \
     libqdi \
     libqdp \
@@ -402,6 +401,7 @@ PRODUCT_PACKAGES += \
     liblowi_wifihal \
     liblqe \
     libmdmcutback \
+    libmedia_ecoservice \
     libmotext_inf \
     libnetmgr_nr_fusion \
     libnetmgr_rmnet_ext \
@@ -409,6 +409,12 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libqcc_file_agent \
     libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
     libqcrildatactl \
     libqdma_file_agent \
     libqmi_csvt_srvc \
@@ -560,6 +566,7 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1-service-default-qti.xml \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
     android.hardware.neuralnetworks@1.3-service-qti.xml \
+    c2_manifest_vendor.xml \
     manifest_android.hardware.drm@1.3-service.widevine.xml \
     vendor.qti.gnss@4.0-service.xml \
     vendor.qti.hardware.servicetracker@1.2-service.xml \
