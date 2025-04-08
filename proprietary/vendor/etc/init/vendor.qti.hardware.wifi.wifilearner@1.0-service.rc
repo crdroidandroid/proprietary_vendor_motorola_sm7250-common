@@ -5,7 +5,7 @@
 #
 
 service vendor.wifilearner /system/vendor/bin/wifilearner
-    class main
+    class hal
     user wifi
     group wifi
     # HIDL interfaces
