@@ -487,7 +487,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.radio.uim_remote_client@1.1 \
     vendor.qti.hardware.radio.uim_remote_client@1.2 \
     vendor.qti.hardware.radio.uim_remote_server@1.0 \
-    vendor.qti.hardware.wigig.netperftuner@1.0 \
     capi_v2_aptX_CLHDADV_Encoder \
     capi_v2_aptX_CLHDAD_Speech_Decoder \
     libapps_mem_heap \
