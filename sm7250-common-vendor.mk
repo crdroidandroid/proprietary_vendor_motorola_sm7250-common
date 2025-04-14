@@ -299,7 +299,6 @@ PRODUCT_PACKAGES += \
     libssc \
     libssc_default_listener \
     libssd \
-    libthermalclient \
     libtime_genoff \
     libtrustedapploader \
     libtzdrmgenprov \
@@ -427,7 +426,7 @@ PRODUCT_PACKAGES += \
     libsettings \
     libslimclient \
     libsystem_health_mon \
-    libsystempioctl \
+    libthermalclient \
     libtinyxml2_1 \
     libwvhidl \
     libxtadapter \
