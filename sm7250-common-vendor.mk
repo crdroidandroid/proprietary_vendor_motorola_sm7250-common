@@ -261,6 +261,7 @@ PRODUCT_PACKAGES += \
     liboemcrypto \
     libops \
     libperipheral_client \
+    libqcbor \
     libqcci_legacy \
     libqcodec2_base \
     libqcodec2_basecodec \
@@ -407,7 +408,6 @@ PRODUCT_PACKAGES += \
     libnetmgr_rmnet_ext \
     libpdmapper \
     libpdnotifier \
-    libqcbor \
     libqcc_file_agent \
     libqcmaputils \
     libqcrildatactl \
